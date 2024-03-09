@@ -1,0 +1,302 @@
+/* 1.Body */
+body {
+    background-color:black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* Custom Font setup */
+@font-face {
+font-family: Mainfont;
+src: url(TarrgetRegular-WEOz.otf);
+}
+@font-face {
+    font-family: Navfont;
+    src: url(RenegadePursuit-ywMr5.ttf);
+}
+@font-face {
+    font-family: Typewriter;
+    src: url(VeraMono.ttf);
+}
+
+
+/* 2. Navbar functions */
+.navbar {
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+}
+.logo {
+    width: 120px;
+}
+.navbarmid {
+    margin: auto;
+}
+.midlinks {
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Mainfont;
+}
+#func {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    display: none;
+}
+.sun {
+    border-bottom:2px solid white;
+    text-align: center;
+}
+.midlinks2 {
+    padding-bottom:20px ;
+    font-family: Mainfont;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+#Menubar {
+    font-size: 60px;
+    color: white;
+    display: none;
+}
+
+
+/* 3. Elements below Navbar */
+.divbelownav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.picishidden {
+    width: 80%;
+    display: none;
+    border-radius: 20px;
+    margin: auto;
+}
+.picbelownav {
+    width: 50%;
+    display: block;
+}
+.sloganer {
+    width: 500px; 
+    height: 400px; 
+}
+.slogan {
+    font-family: Mainfont;
+    font-size: 50px;
+}
+.belowslogan {
+    width: 500px;
+    text-align: left;
+    font-family: Navfont;
+    font-size: 20px;
+}
+
+
+/* 4. Department part designs and animations */
+.Headings {
+    font-family:Mainfont;
+    font-size: 30px;
+}
+.sr {
+    font-size: 30px;
+}
+.typing-demo-1 {
+    width: 11ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    animation-delay: 2s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    font-family: Typewriter;
+    color: #2a4aff;
+    font-size: 30px;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.typingspace {
+    width: 45%; 
+    height: 50px; 
+    background-color: #fcfcfc1c; 
+    border-radius: 20px; 
+    align-items: center; 
+    display: flex; 
+    margin-left: 20px;
+}
+.desc-1 {
+    width: 50%;
+    font-family: Navfont;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+.desc-2 {
+    width: 50%;
+    font-family: Navfont;
+    font-size: 20px;
+    padding-left: 20px;
+    display: block;
+}
+.desc-3 {
+    width: 50%;
+    font-family: Navfont;
+    font-size: 20px;
+    display: none;
+}
+.picsinbody {
+    width: 45%;
+    border-radius: 20px;
+}
+.middle {
+    display: flex;
+    background-color: #131313;
+    justify-content: space-between;
+    width: 95%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Functions on Tab */
+@media (max-width:1100px){
+    .navbar {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbarmid {
+        display: none;
+    }
+    .midlinks2 {
+        text-align: center;
+    }
+    #Menubar {
+        display: block;
+    }
+    .logo {
+        width: 80px;
+    }
+    .divbelownav {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .picishidden {
+        display: block;
+    }
+    .slogan {
+        font-size: 40px;
+    }
+    .picbelownav {
+        display: none;
+    }
+    .belowslogan {
+        width: 500px;
+        text-align: center;
+    }
+    .typingspace {
+        width: 90%;
+        margin: auto;
+    }
+    .picsinbody {
+        width: 100%;
+    }
+    .middle {
+        display: grid;
+    }
+    .desc-1 {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+    .desc-2 {
+        display: none;
+        width: 80%;
+    }
+    .desc-3 {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* Media functions on phones */
+@media (max-width:700px) {
+    .navbar {
+        height: 50px;
+    }
+    .logo {
+        width: 60px;
+    }
+    #Menubar {
+        font-size: 40px;
+    }
+    .sloganer {
+        width: 250px;
+        height: 250px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+    .belowslogan {
+        width: 250px;
+        font-size: 10px;
+    }
+    .Headings {
+        font-size: 15px;
+    }
+    .typingspace {
+        width: 80%;
+        height: 30px;
+    }
+    .typing-demo-1 {
+        font-size: 15px;
+    }
+    .sr {
+        font-size: 20px;
+    }
+    .desc-1 {
+        font-size: 10px;
+    }
+    .desc-3 {
+        font-size: 10px;
+    }
+}
